@@ -16,7 +16,7 @@ export class SharedServiceService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("page",page);
 
-    return this.http.get('https://muddy-teal-waders.cyclic.app/movies', {
+    return this.http.get('http://localhost:4000/movies', {
       observe:'body',
       withCredentials : true,
       params: queryParams,
@@ -28,7 +28,7 @@ export class SharedServiceService {
 
   public registerUserUnProtected(payload : any) {
 
-    return this.http.post("https://muddy-teal-waders.cyclic.app/register" , payload , {
+    return this.http.post("http://localhost:4000/register" , payload , {
       observe:'body',
       withCredentials : true,
       headers : new HttpHeaders().append('Content-Type' , 'application/json')
@@ -38,7 +38,7 @@ export class SharedServiceService {
 
   public loginUserUnProtected(payload : any) {
 
-    return this.http.post("https://muddy-teal-waders.cyclic.app/login" , payload , {
+    return this.http.post("http://localhost:4000/login" , payload , {
       observe:'body',
       withCredentials : true,
       headers : new HttpHeaders().append('Content-Type' , 'application/json')

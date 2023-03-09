@@ -1,6 +1,6 @@
 # MovieApplication
 
-## Develoy code locally server
+## Develoy code locally
 Run `npm install`. it will install all required libraries
 
 Run `ng serve` to deply code locally.

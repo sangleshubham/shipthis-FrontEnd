@@ -1,5 +1,18 @@
 # MovieApplication
 
+## Develoy code locally server
+Run `npm install`. it will install all required libraries
+
+Run `ng serve` to deply code locally.
+
+Got to mentioned address.
+![image](https://user-images.githubusercontent.com/37057102/224112004-ee17c013-46da-4fd6-b9ea-c1db36b18342.png)
+
+### Visit : http://localhost:4200/login
+
+Backend in already deployed inserver so local backend is not required.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
 ## Development server

@@ -1,0 +1,70 @@
+<div class="ag-format-container">
+  <div class="ag-courses_box">
+    <div class="ag-courses_item">
+      <a class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+        <div class="ag-courses-item_title">
+          {{ item?.title }} ({{ item?.release_year }})
+        </div>
+        <br />
+
+        <div class="ag-courses-item_date-box" *ngIf="item?.director">
+          director
+          <span class="ag-courses-item_date">
+            {{ item?.director }}
+          </span>
+        </div>
+        <br />
+        <div class="ag-courses-item_date-box" *ngIf="item?.cast">
+          Cast:
+          <span class="ag-courses-item_date">
+            {{ item?.cast }}
+          </span>
+        </div>
+        <br />
+        <div class="ag-courses-item_date-box" *ngIf="item?.type">
+          Type:
+          <span class="ag-courses-item_date">
+            {{ item?.type }}
+          </span>
+        </div>
+        <br />
+        <div class="ag-courses-item_date-box" *ngIf="item?.duration">
+          Duration:
+          <span class="ag-courses-item_date">
+            {{ item?.duration }}
+          </span>
+        </div>
+        <br />
+        <div class="ag-courses-item_date-box" *ngIf="item?.rating">
+          Rating:
+          <span class="ag-courses-item_date">
+            {{ item?.rating }}
+          </span>
+        </div>
+        <br />
+        <div class="ag-courses-item_date-box" *ngIf="item?.cast">
+          Country:
+          <span class="ag-courses-item_date">
+            {{ item?.country }}
+          </span>
+        </div>
+        <br />
+        <br />
+        <div class="ag-courses-item_date-box" *ngIf="item?.cast">
+          Listed In:
+          <span class="ag-courses-item_date">
+            {{ item?.listed_in }}
+          </span>
+        </div>
+        <br />
+        <div class="ag-courses-item_date-box" *ngIf="item?.cast">
+          Description:
+          <span class="ag-courses-item_date">
+            {{ item?.description }}
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

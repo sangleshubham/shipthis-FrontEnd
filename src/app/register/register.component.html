@@ -1,0 +1,20 @@
+<div class="login-form">
+  <form>
+    <h1>Register</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="email" placeholder="Email" autocomplete="nope" [(ngModel)]="email"  name="email">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" autocomplete="new-password" [(ngModel)]="password" name="password">
+      </div>
+      <div class="input-field">
+        <input placeholder="Age" name="age" [(ngModel)]="age">
+      </div>
+    </div>
+    <div class="action">
+      <button [routerLink]="['/login']" >Sign in</button>
+      <button (click)="submit()">Register</button>
+    </div>
+  </form>
+</div>

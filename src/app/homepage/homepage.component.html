@@ -1,0 +1,55 @@
+<div class="ag-format-container">
+  <div class="ag-courses_box">
+
+
+    <div class="ag-courses_item" *ngFor="let item of homePageData?.results" id="{{item.show_id}}" (click)="openWindow(item)" >
+      <a class="ag-courses-item_link" >
+        <div class="ag-courses-item_bg">
+        </div>
+        <div class="ag-courses-item_title">
+          {{ item.title}} ({{item.release_year}})
+        </div>
+
+
+        <div class="ag-courses-item_date-box" *ngIf="item.director">
+          director
+          <span class="ag-courses-item_date">
+            {{item.director}}
+          </span>
+        </div>
+
+        <div class="ag-courses-item_date-box" *ngIf="item.type">
+          Type:
+          <span class="ag-courses-item_date">
+            {{item.type}}
+          </span>
+        </div>
+
+        <div class="ag-courses-item_date-box" *ngIf="item.duration">
+          Duration:
+          <span class="ag-courses-item_date">
+            {{item.duration}}
+          </span>
+        </div>
+
+        <div class="ag-courses-item_date-box" *ngIf="item.rating">
+          Rating:
+          <span class="ag-courses-item_date">
+            {{item.rating}}
+          </span>
+        </div>
+
+
+
+      </a>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<button (click)="nextPage()" class="button" *ngIf="homePageData?.results"> Next </button>
+<button (click)="oldPage()" class="buttonOld" *ngIf="homePageData?.results && currentPage >= 2"> Previous </button>

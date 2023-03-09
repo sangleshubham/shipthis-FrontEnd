@@ -10,7 +10,8 @@ Got to mentioned address.
 
 ### Visit : http://localhost:4200/login
 
-Backend in already deployed inserver so local backend is not required.
+Backend is need to be deployed for this app to work. 
+backend repo :  https://github.com/sangleshubham/Shipthis-Backend.git
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
